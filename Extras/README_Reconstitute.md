@@ -9,7 +9,7 @@ The `Reconstitute.py` utility is a tool designed to automate the recovery from s
 The `Reconstitute.py` utility accepts the following arguments:
 
 * `-h` or `--help`: Shows information about available flags and associated arguments. Specifying this flag causes the script to immediately exit after printing the help-contents &mdash; whether or not other flags and arguments are specified.
-* `-a` or ` --recovery-ami`: Requires a valid AMI ID as argument. This script can automatically recover both Linux- and Windows-based EC2s. It is expected that the supplied AMI ID will be either same as the one used to create the source EC2 or in the same AMI-family (e.g. [spel](https://github.com/plus3it/spel) AMIs). It's possible that other AMIs will suffice, but such has not been tested.
+* `-a` or ` --recovery-ami`: Requires a valid AMI ID as argument. This script can automatically recover both Linux- and Windows-based EC2s. It is expected that the supplied AMI ID will be either same as the one used to create the source EC2 or in the same AMI-family (e.g. [spel](https://github.com/MetroStar/spel) AMIs). It's possible that other AMIs will suffice, but such has not been tested.
 * `-e` or `--ebs-type`: Requires a valid EBS-type as argument. The specified type is used during the process of reconstituting target snapshots as EBS volumes. Valid values are:
     * `standard`: Legacy "magnetic" volumes. [**NOT CURRENTLY SUPPORTED**]
     * `io1`: Provisioned IOPS SSD
